@@ -1,0 +1,16 @@
+The Windows DDK comes with a really good compiler that can target x86, x64, ia32, ia64 architectures and multiple OS flavors of Windows. You might not have used it before, so I'm providing a brief introduction.
+
+Download and install the Windows Device Driver Kit. The one on my machine is a bit older (7600.16385.1) but it'll work to provide examples. When you install it, it'll go into a directory like:
+
+c:\WinDDK\7600.16385.1
+
+So, open an command prompt, cd to that directory and run setenv.bat with some args to specify what kind of build you will be making (ie, a checked or free build, an x86, x64, ia32, ia64 target processor and the target OS). So, type:
+
+cd c:\WinDDK\7600.16385.1\bin
+setenv c:\WinDDK\7600.16385.1 fre x64 win7
+
+Now you can cd to your local folder where you have the .c files and run build:
+
+cd c:\HydroDPa\src
+build
+
