@@ -2,6 +2,16 @@ In Windows there are multiple ways to build this project. Obviously there are Re
 
 *** Compiling with Visual Studio
 
+The targets the can be made with this compiler are x86 and x64 variants of .exe and .dll. Obviously, release and debug builds as well.
+
+To get going, open the ohdp-xlplugin.sln file with visual studio. You should then have the ohdp-xlplugin and ohdp-core project files in the workspace along with their dependencies. Use the Build/BatchBuild menu and build-all. This will create:
+
+- The commandline ohdp program (ohdp-a.exe) in the x86Release, x64Release, x86Debug and x64Debug folders under ohdp-core-a.
+- The DLL version of the ohdp-core in the x86DLLRelease, x64DLLRelease, x86DLLDebug and x64DLLDebug folders under ohdp-core-a which is needed to link with the Excel plugin.
+- The Excel plugin ohdp-a.xll and ohdpx64-a.xll in the x86Release, x64Release, x86Debug and x64Debug folders under ohdp-xlplugin-a.
+
+Since the Excel plugin was built with core code from the ohdp-core-a tree and a plugin shim from the ohdp-xlplugin-a tree the versions of both may be important to check when you load excel. Use the plugin's HydroVersion command to show there versions in <plugin>/<core> version format.
+
 *** Compiling with WinDDK
 
 If you compile with the Visual Studio IDE you will require anyone that uses your compiled code to also install a runtime library - which version will depend upon which version of the IDE you compiled the code with. There is a way to relax the requirement of installing a redistributable (say, for locked-down machine environments) but requires using an alternate compiler from Microsoft - the Device Driver Kit (sometimes called the WindDDK). It is not a visual compilation environment but a command line environment which you might have trouble getting used to. The real bonus is that you'll be able to mak excel plugins that don't require the installation of extra stuff.
