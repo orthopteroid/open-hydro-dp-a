@@ -132,6 +132,10 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='DLLRelease|x64'">$(ProjectDir)$(Platform)$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">$(ProjectDir)x86$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLLRelease|x64'">$(ProjectDir)$(Platform)$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ohdp</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ohdp</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ohdp</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ohdp</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
