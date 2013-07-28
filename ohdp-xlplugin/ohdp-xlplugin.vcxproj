@@ -71,16 +71,16 @@
     <IncludePath>$(ProjectDir)\..\ohdp-core\include;$(ProjectDir)\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\..\ohdp-core\x86DLLDebug;$(LibraryPath)</LibraryPath>
     <TargetExt>.xll</TargetExt>
-    <OutDir>$(SolutionDir)x86$(Configuration)\</OutDir>
-    <IntDir>x86$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)x86$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)x86$(Configuration)\</IntDir>
     <TargetName>ohdp</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir)\..\ohdp-core\include;$(ProjectDir)\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\..\ohdp-core\x64DLLDebug;$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)$(Platform)$(Configuration)\</OutDir>
-    <IntDir>$(Platform)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Platform)$(Configuration)\</IntDir>
     <TargetExt>.xll</TargetExt>
     <TargetName>ohdpx64</TargetName>
   </PropertyGroup>
@@ -88,15 +88,15 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(ProjectDir)\..\ohdp-core\include;$(ProjectDir)\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\..\ohdp-core\x86DLLRelease;$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)x86$(Configuration)\</OutDir>
-    <IntDir>x86$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)x86$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)x86$(Configuration)\</IntDir>
     <TargetExt>.xll</TargetExt>
     <TargetName>ohdp</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)$(Platform)$(Configuration)\</OutDir>
-    <IntDir>$(Platform)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Platform)$(Configuration)\</IntDir>
     <TargetName>ohdpx64</TargetName>
     <IncludePath>$(ProjectDir)\..\ohdp-core\include;$(ProjectDir)\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\..\ohdp-core\x64DLLRelease;$(LibraryPath)</LibraryPath>

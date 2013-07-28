@@ -158,7 +158,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <OutputFile>$(OutDir)ohdp$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -185,7 +184,6 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <OutputFile>$(OutDir)ohdp$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -216,7 +214,6 @@
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
-      <OutputFile>$(OutDir)ohdp$(TargetExt)</OutputFile>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -260,7 +257,6 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <LinkTimeCodeGeneration>
       </LinkTimeCodeGeneration>
-      <OutputFile>$(OutDir)ohdp$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">
@@ -284,9 +280,7 @@
       <CompileAs>CompileAsCpp</CompileAs>
       <FloatingPointModel>Fast</FloatingPointModel>
     </ClCompile>
-    <Lib>
-      <OutputFile>$(OutDir)ohdp-core$(TargetExt)</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLLDebug|x64'">
     <ClCompile>
@@ -309,9 +303,7 @@
       <CompileAs>CompileAsCpp</CompileAs>
       <FloatingPointModel>Fast</FloatingPointModel>
     </ClCompile>
-    <Lib>
-      <OutputFile>$(OutDir)ohdp-core$(TargetExt)</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">
     <ClCompile>
@@ -343,9 +335,7 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
-    <Lib>
-      <OutputFile>$(OutDir)ohdp-core$(TargetExt)</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLLRelease|x64'">
     <ClCompile>
@@ -377,9 +367,7 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
-    <Lib>
-      <OutputFile>$(OutDir)ohdp-core$(TargetExt)</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c" />
